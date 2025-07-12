@@ -1,8 +1,8 @@
 """Basic arithmetic operations demonstration."""
 
-number1 = 10
-number2 = 5
+NUMBER1 = 10
+NUMBER2 = 5
 
-print(f"sum of {number1} and {number2} is {number1 + number2}")
-print(f"difference of {number1} and {number2} is {number1 - number2}")
-print(f"product of {number1} and {number2} is {number1 * number2}")
+print(f"sum of {NUMBER1} and {NUMBER2} is {NUMBER1 + NUMBER2}")
+print(f"difference of {NUMBER1} and {NUMBER2} is {NUMBER1 - NUMBER2}")
+print(f"product of {NUMBER1} and {NUMBER2} is {NUMBER1 * NUMBER2}")
