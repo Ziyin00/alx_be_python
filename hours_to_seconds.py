@@ -1,4 +1,3 @@
-"""Hours to seconds conversion."""
 
 HOURS = 2
 

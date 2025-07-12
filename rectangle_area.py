@@ -1,4 +1,3 @@
-"""Rectangle area calculation."""
 
 LENGTH = 10
 WIDTH = 5

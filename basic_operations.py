@@ -1,4 +1,3 @@
-"""Basic arithmetic operations demonstration."""
 
 NUMBER1 = 10
 NUMBER2 = 5
