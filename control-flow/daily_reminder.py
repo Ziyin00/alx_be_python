@@ -1,8 +1,9 @@
 """Prompts for a task, its priority, and time sensitivity, then prints a customized reminder."""
 
-task = input("Enter your task: ")
-priority = input("Enter the task's priority (high, medium, low): ")
-time_bound = input("Is the task time-bound? (yes or no): ")
+task = input("Enter your task: ").strip()
+priority = input(
+    "Enter the task's priority (high, medium, low): ").strip().lower()
+time_bound = input("Is the task time-bound? (yes or no): ").strip().lower()
 
 reminder = ""
 match priority:
@@ -15,7 +16,7 @@ match priority:
     case _:
         reminder = f"REMINDER: '{task}' has an unspecified priority."
 
-if time_bound.lower() == "yes":
+if time_bound == "yes":
     reminder += " This task requires immediate attention today!"
 
 print(reminder)
