@@ -29,8 +29,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
         # Decimal numbers
         self.assertEqual(self.calc.add(3.5, 2.5), 6.0)
-        self.assertEqual(self.calc.add(0.1, 0.2),
-                         0.30000000000000004)  # Float precision
+        self.assertAlmostEqual(self.calc.add(0.1, 0.2), 0.3, places=15)  # Float precision
 
     def test_subtraction(self):
         """Test the subtraction method with various scenarios."""
@@ -95,8 +94,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
         # Decimal numbers
         self.assertEqual(self.calc.divide(7.5, 2.5), 3.0)
-        self.assertEqual(self.calc.divide(
-            1, 3), 0.3333333333333333)  # Float precision
+        self.assertAlmostEqual(self.calc.divide(1, 3), 1/3, places=15)  # Float precision
 
     def test_edge_cases(self):
         """Test edge cases for all operations."""
